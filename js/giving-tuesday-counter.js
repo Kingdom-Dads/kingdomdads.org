@@ -29,7 +29,7 @@
             const remaining = goal - (raisedAmt + matchedAmt);
 
             // Calculate percentage
-            const percentage = Math.min((raisedAmt + matchedAmt / goal) * 100, 100);
+            const percentage = Math.min(((raisedAmt + matchedAmt) / goal) * 100, 100);
 
             // Update the thermometer fill
             const fill = document.querySelector('.kd-thermo__fill');
