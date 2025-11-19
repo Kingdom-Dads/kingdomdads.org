@@ -33,7 +33,8 @@
             // Update the thermometer fill
             const fill = document.querySelector('.kd-thermo__fill');
             if (fill) {
-                fill.style.height = percentage + '%';
+                fill.style.setProperty('--kd-fill-target', percentage + '%');
+
             }
 
 
