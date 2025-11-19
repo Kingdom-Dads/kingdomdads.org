@@ -1,4 +1,4 @@
-const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRLUQIMh0MvXL3QQeoWvyy13Cx9KJb8i67SLYWL2bBhw1aHU8FiQbPCqtzqRitC35TpubWR33D_BKRW/pub?gid=0&single=true&output=tsv';
+  const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRLUQIMh0MvXL3QQeoWvyy13Cx9KJb8i67SLYWL2bBhw1aHU8FiQbPCqtzqRitC35TpubWR33D_BKRW/pub?gid=0&single=true&output=tsv';
 
     async function updateThermometer() {
         try {
@@ -39,6 +39,7 @@ const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRLUQIMh0MvXL
 
             document.querySelector('span.kd-thermo-total').textContent = '$' + goal.toLocaleString();
             document.querySelector('span.kd-thermo_goal').textContent = '$' + goal.toLocaleString();
+            document.querySelector('span.kd-thermo_goal_2').textContent = '$' + goal.toLocaleString();
             document.querySelector('span.kd-thermo_mid').textContent = '$' + goal_mid.toLocaleString();
             document.querySelector('span.kd-thermo_raised_total').textContent = '$' + raisedAmount.toLocaleString();
             document.querySelector('span.kd-thermo_remaining').textContent = '$' + remaining.toLocaleString();
